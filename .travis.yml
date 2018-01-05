@@ -6,9 +6,6 @@ python:
 
 install:
     - pip install jupyter
-    - wget https://github.com/hakimel/reveal.js/archive/master.zip
-    - unzip master.zip
-    - mv reveal.js-master reveal.js
 
 script:
     - jupyter nbconvert astro_bayes.ipynb --to slides
