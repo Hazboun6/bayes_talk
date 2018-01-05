@@ -11,7 +11,7 @@ install:
     - mv reveal.js-master reveal.js
 
 script:
-    - jupyter nbconvert astro_bayes.ipynb --to slides --reveal-prefix=reveal.js
+    - jupyter nbconvert astro_bayes.ipynb --to slides
 
 after_success: |
     git checkout --orphan gh-pages
